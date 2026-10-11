@@ -1,0 +1,3306 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Loader fixed: first-paint visible / 5s progress / no black reveal -->
+
+<head>
+
+    <!-- =========================================================
+         BASIC SEO
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="description"
+        content="Sameer is a digital marketing specialist focused on SEO, performance marketing, social media and creative digital experiences."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="author"
+        content="Sameer"
+    >
+
+    <meta
+        name="theme-color"
+        content="#F6F2E8"
+    >
+
+    <link
+        rel="canonical"
+        href="https://yourdomain.com/"
+    >
+
+
+    <!-- =========================================================
+         OPEN GRAPH
+    ========================================================== -->
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="Sameer — Digital Marketing Specialist"
+    >
+
+    <meta
+        property="og:description"
+        content="SEO, performance marketing, social media and creative digital work."
+    >
+
+    <meta
+        property="og:url"
+        content="https://yourdomain.com/"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Sameer"
+    >
+
+
+    <!-- =========================================================
+         FONT PERFORMANCE
+    ========================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+
+    <!-- =========================================================
+         UNIQUE FONT SYSTEM
+         Display: Bricolage Grotesque
+         UI / Body: Manrope
+    ========================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         BOOTSTRAP 5
+    ========================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- =========================================================
+         YOUR CSS
+    ========================================================== -->
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+<!-- =========================================================
+     SAMEER PORTFOLIO LOADER — FINAL
+     Critical CSS is inline so the loader is visible on first paint.
+========================================================= -->
+<style id="sameerLoaderCritical">
+html.loader-active,
+body.loader-active{
+    overflow:hidden!important;
+    background:#F6F2E8!important;
+}
+
+#sameerLoader{
+    position:fixed!important;
+    inset:0!important;
+    width:100vw!important;
+    height:100dvh!important;
+    min-height:100vh!important;
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+    background:#F6F2E8!important;
+    color:#080808!important;
+    z-index:2147483647!important;
+    overflow:hidden!important;
+    isolation:isolate!important;
+    pointer-events:auto!important;
+    font-family:"Manrope",sans-serif;
+}
+
+#sameerLoader,
+#sameerLoader *{
+    box-sizing:border-box;
+}
+
+#sameerLoader .loader-bg{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    background:
+        radial-gradient(circle at 78% 44%,rgba(255,100,31,.12),transparent 28%),
+        radial-gradient(circle at 13% 78%,rgba(49,87,255,.08),transparent 25%),
+        #F6F2E8;
+}
+
+#sameerLoader .loader-bg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    opacity:.07;
+    pointer-events:none;
+    background-image:radial-gradient(rgba(8,8,8,.7) .55px,transparent .55px);
+    background-size:5px 5px;
+}
+
+#sameerLoader .loader-top{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    padding:26px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index:20;
+}
+
+#sameerLoader .loader-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+#sameerLoader .loader-mark{
+    width:43px;
+    height:43px;
+    display:grid;
+    place-items:center;
+    border:1.5px solid #080808;
+    font-family:"Bricolage Grotesque",sans-serif;
+    font-size:18px;
+    font-weight:900;
+    line-height:1;
+}
+
+#sameerLoader .loader-mark span{
+    color:#FF641F;
+}
+
+#sameerLoader .loader-brand-text{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+}
+
+#sameerLoader .loader-brand-text strong{
+    font-family:"Bricolage Grotesque",sans-serif;
+    font-size:12px;
+    line-height:1;
+    font-weight:800;
+    letter-spacing:.12em;
+}
+
+#sameerLoader .loader-brand-text small{
+    font-size:7px;
+    line-height:1;
+    font-weight:700;
+    letter-spacing:.18em;
+    opacity:.5;
+}
+
+#sameerLoader .loader-meta{
+    display:flex;
+    align-items:center;
+    gap:11px;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.15em;
+}
+
+#sameerLoader .loader-meta i{
+    width:5px;
+    height:5px;
+    display:block;
+    border-radius:50%;
+    background:#FF641F;
+    animation:sameerLoaderPulse 1s ease-in-out infinite;
+}
+
+#sameerLoader .loader-main{
+    position:absolute;
+    inset:0;
+    padding:118px 7vw 145px;
+    display:flex;
+    align-items:center;
+    z-index:5;
+}
+
+#sameerLoader .loader-bg-text{
+    position:absolute;
+    left:3vw;
+    top:50%;
+    transform:translateY(-50%);
+    font-family:"Bricolage Grotesque",sans-serif;
+    font-size:clamp(165px,27vw,440px);
+    line-height:.78;
+    font-weight:900;
+    letter-spacing:-.10em;
+    white-space:nowrap;
+    color:rgba(8,8,8,.035);
+    pointer-events:none;
+    user-select:none;
+    z-index:0;
+}
+
+#sameerLoader .loader-copy{
+    position:relative;
+    width:49%;
+    z-index:10;
+}
+
+#sameerLoader .loader-label{
+    display:inline-block;
+    margin-bottom:20px;
+    padding-left:12px;
+    border-left:3px solid #FF641F;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.18em;
+}
+
+#sameerLoader .loader-heading{
+    margin:0;
+    font-family:"Bricolage Grotesque",sans-serif;
+    font-size:clamp(58px,7.2vw,112px);
+    line-height:.86;
+    font-weight:900;
+    letter-spacing:-.075em;
+    text-transform:uppercase;
+}
+
+#sameerLoader .loader-heading span{
+    display:block;
+}
+
+#sameerLoader .loader-heading em{
+    color:#FF641F;
+    font-style:normal;
+}
+
+#sameerLoader .loader-skills{
+    margin-top:28px;
+    display:flex;
+    align-items:center;
+    gap:9px;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.12em;
+}
+
+#sameerLoader .loader-skills b{
+    color:#3157FF;
+    font-size:13px;
+}
+
+#sameerLoader .loader-visual{
+    position:absolute;
+    left:47%;
+    top:50%;
+    width:min(39vw,560px);
+    height:min(39vw,560px);
+    transform:translate(-4%,-50%);
+    display:grid;
+    place-items:center;
+    z-index:6;
+}
+
+#sameerLoader .visual-orb{
+    position:absolute;
+    width:44%;
+    aspect-ratio:1;
+    border-radius:50%;
+    background:
+        radial-gradient(circle at 33% 28%,#ffb18d 0%,#ff7f4d 20%,#FF641F 50%,#d74300 100%);
+    box-shadow:
+        0 30px 70px rgba(255,100,31,.26),
+        inset -15px -18px 30px rgba(0,0,0,.15),
+        inset 10px 10px 20px rgba(255,255,255,.28);
+    animation:sameerOrbFloat 4s ease-in-out infinite;
+}
+
+#sameerLoader .visual-ring{
+    position:absolute;
+    border-radius:50%;
+    border:1px solid rgba(8,8,8,.16);
+    pointer-events:none;
+}
+
+#sameerLoader .visual-ring-one{
+    width:64%;
+    height:30%;
+    animation:sameerRingOne 8s linear infinite;
+}
+
+#sameerLoader .visual-ring-two{
+    width:78%;
+    height:38%;
+    border-color:rgba(49,87,255,.25);
+    animation:sameerRingTwo 10s linear infinite reverse;
+}
+
+#sameerLoader .visual-ring-three{
+    width:91%;
+    height:46%;
+    border-style:dashed;
+    border-color:rgba(255,100,31,.25);
+    animation:sameerRingThree 12s linear infinite;
+}
+
+#sameerLoader .visual-dot{
+    position:absolute;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#3157FF;
+}
+
+#sameerLoader .dot-one{
+    right:16%;
+    top:14%;
+    animation:sameerDotMove 2.5s ease-in-out infinite;
+}
+
+#sameerLoader .dot-two{
+    left:15%;
+    bottom:17%;
+    background:#FF641F;
+    animation:sameerDotMove 3s ease-in-out infinite reverse;
+}
+
+#sameerLoader .dot-three{
+    right:8%;
+    bottom:34%;
+    width:5px;
+    height:5px;
+    animation:sameerDotMove 2.8s ease-in-out infinite;
+}
+
+#sameerLoader .loader-photo{
+    position:relative;
+    width:44%;
+    height:72%;
+    overflow:hidden;
+    border-radius:150px 150px 25px 25px;
+    background:#DCD4C8;
+    border:1px solid rgba(8,8,8,.13);
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+    transform:rotate(4deg);
+    z-index:8;
+    animation:sameerPhotoFloat 4.5s ease-in-out infinite;
+}
+
+#sameerLoader .loader-photo img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    opacity:1!important;
+    visibility:visible!important;
+}
+
+#sameerLoader .photo-glow{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:50%;
+    background:linear-gradient(to top,rgba(8,8,8,.22),transparent);
+    z-index:2;
+    pointer-events:none;
+}
+
+#sameerLoader .visual-chip{
+    position:absolute;
+    padding:9px 14px;
+    background:rgba(246,242,232,.92);
+    color:#080808;
+    border:1px solid rgba(8,8,8,.14);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    font-size:8px;
+    font-weight:900;
+    letter-spacing:.12em;
+    z-index:15;
+}
+
+#sameerLoader .chip-seo{
+    left:3%;
+    top:18%;
+    animation:sameerChipFloat 3.5s ease-in-out infinite;
+}
+
+#sameerLoader .chip-ads{
+    right:3%;
+    top:26%;
+    background:#3157FF;
+    color:#fff;
+    animation:sameerChipFloat 4s ease-in-out infinite reverse;
+}
+
+#sameerLoader .chip-social{
+    left:7%;
+    bottom:16%;
+    background:#FF641F;
+    color:#fff;
+    animation:sameerChipFloat 3.8s ease-in-out infinite;
+}
+
+#sameerLoader .loader-process{
+    position:absolute;
+    right:5vw;
+    bottom:20%;
+    width:250px;
+    z-index:15;
+}
+
+#sameerLoader .process-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:10px;
+    border-bottom:1px solid rgba(8,8,8,.15);
+    font-size:8px;
+    font-weight:800;
+    letter-spacing:.14em;
+}
+
+#sameerLoader .process-top strong{
+    font-size:9px;
+    font-weight:900;
+}
+
+#sameerLoader .process-item{
+    height:38px;
+    display:grid;
+    grid-template-columns:34px 1fr 20px;
+    align-items:center;
+    border-bottom:1px solid rgba(8,8,8,.08);
+    font-size:8px;
+    font-weight:700;
+    opacity:.34;
+    transform:translateX(0);
+    transition:
+        opacity .35s ease,
+        color .35s ease,
+        transform .35s ease;
+}
+
+#sameerLoader .process-item span{
+    opacity:.65;
+}
+
+#sameerLoader .process-item strong{
+    font-weight:800;
+    letter-spacing:.10em;
+}
+
+#sameerLoader .process-item i{
+    font-style:normal;
+    text-align:right;
+}
+
+#sameerLoader .process-item.active{
+    opacity:1;
+    color:#FF641F;
+    transform:translateX(7px);
+}
+
+#sameerLoader .process-item.active span,
+#sameerLoader .process-item.active i{
+    opacity:1;
+}
+
+#sameerLoader .loader-bottom{
+    position:absolute;
+    left:40px;
+    right:40px;
+    bottom:28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index:30;
+}
+
+#sameerLoader .loader-status{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:8px;
+    font-weight:800;
+    letter-spacing:.12em;
+}
+
+#sameerLoader .loader-status i{
+    width:7px;
+    height:7px;
+    display:block;
+    border-radius:50%;
+    background:#FF641F;
+    animation:sameerLoaderPulse 1s infinite;
+}
+
+#sameerLoader .loader-progress{
+    width:min(430px,45vw);
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+#sameerLoader .progress-label{
+    font-size:8px;
+    font-weight:900;
+    letter-spacing:.12em;
+}
+
+#sameerLoader .progress-track{
+    position:relative;
+    flex:1;
+    height:5px;
+    overflow:hidden;
+    background:rgba(8,8,8,.10);
+}
+
+#sameerLoader #loaderProgressBar{
+    display:block;
+    width:0%;
+    height:100%;
+    background:linear-gradient(90deg,#3157FF,#FF641F);
+    transition:none!important;
+}
+
+#sameerLoader #loaderProgress{
+    width:32px;
+    text-align:right;
+    font-size:11px;
+    font-weight:900;
+}
+
+#sameerLoader .reveal-panel{
+    display:none!important;
+}
+
+/* Never start the loader content hidden. */
+#sameerLoader .loader-bg,
+#sameerLoader .loader-top,
+#sameerLoader .loader-main,
+#sameerLoader .loader-copy,
+#sameerLoader .loader-visual,
+#sameerLoader .loader-process,
+#sameerLoader .loader-bottom,
+#sameerLoader .loader-photo,
+#sameerLoader .loader-photo img{
+    opacity:1!important;
+    visibility:visible!important;
+}
+
+@keyframes sameerLoaderPulse{
+    0%,100%{opacity:1;transform:scale(1);}
+    50%{opacity:.4;transform:scale(.72);}
+}
+
+@keyframes sameerOrbFloat{
+    0%,100%{transform:translateY(0) scale(1);}
+    50%{transform:translateY(-12px) scale(1.025);}
+}
+
+@keyframes sameerPhotoFloat{
+    0%,100%{transform:rotate(4deg) translateY(0);}
+    50%{transform:rotate(2deg) translateY(-8px);}
+}
+
+@keyframes sameerChipFloat{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+}
+
+@keyframes sameerDotMove{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
+
+@keyframes sameerRingOne{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+@keyframes sameerRingTwo{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(-360deg);}
+}
+
+@keyframes sameerRingThree{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+@media (max-width:767px){
+
+    #sameerLoader .loader-top{
+        padding:18px;
+    }
+
+    #sameerLoader .loader-mark{
+        width:37px;
+        height:37px;
+        font-size:16px;
+    }
+
+    #sameerLoader .loader-brand-text strong{
+        font-size:10px;
+    }
+
+    #sameerLoader .loader-brand-text small{
+        font-size:6px;
+    }
+
+    #sameerLoader .loader-meta{
+        font-size:7px;
+    }
+
+    #sameerLoader .loader-main{
+        display:block;
+        padding:100px 20px 120px;
+    }
+
+    #sameerLoader .loader-bg-text{
+        left:-5px;
+        top:42%;
+        font-size:35vw;
+    }
+
+    #sameerLoader .loader-copy{
+        position:absolute;
+        left:20px;
+        right:20px;
+        top:92px;
+        width:auto;
+    }
+
+    #sameerLoader .loader-label{
+        font-size:7px;
+        margin-bottom:13px;
+    }
+
+    #sameerLoader .loader-heading{
+        font-size:clamp(43px,13vw,70px);
+        line-height:.88;
+    }
+
+    #sameerLoader .loader-skills{
+        margin-top:16px;
+        gap:5px;
+        font-size:6px;
+    }
+
+    #sameerLoader .loader-visual{
+        width:82vw;
+        height:82vw;
+        left:50%;
+        top:52%;
+        transform:translate(-50%,-50%);
+    }
+
+    #sameerLoader .loader-photo{
+        width:44%;
+        height:69%;
+        border-radius:100px 100px 18px 18px;
+    }
+
+    #sameerLoader .visual-chip{
+        padding:7px 10px;
+        font-size:6px;
+    }
+
+    #sameerLoader .loader-process{
+        left:20px;
+        right:20px;
+        bottom:78px;
+        width:auto;
+    }
+
+    #sameerLoader .process-top{
+        font-size:6px;
+        padding-bottom:6px;
+    }
+
+    #sameerLoader .process-item{
+        height:25px;
+        grid-template-columns:28px 1fr 15px;
+        font-size:6px;
+    }
+
+    #sameerLoader .loader-bottom{
+        left:20px;
+        right:20px;
+        bottom:17px;
+        display:block;
+    }
+
+    #sameerLoader .loader-status{
+        font-size:6px;
+        margin-bottom:7px;
+    }
+
+    #sameerLoader .loader-progress{
+        width:100%;
+        gap:7px;
+    }
+
+    #sameerLoader .progress-label{
+        font-size:6px;
+    }
+
+    #sameerLoader #loaderProgress{
+        width:24px;
+        font-size:9px;
+    }
+}
+</style>
+
+
+
+    
+
+
+    <title>
+        Sameer — Digital Marketing Specialist
+    </title>
+
+</head>
+
+
+<body class="loader-active">
+
+
+
+    <!-- =========================================================
+         ACCESSIBILITY
+    ========================================================== -->
+<!-- =========================================================
+     SAMEER PORTFOLIO LOADER
+     ========================================================= -->
+
+<div
+    class="sameer-loader"
+    id="sameerLoader"
+    aria-hidden="true"
+>
+
+    <div class="loader-bg"></div>
+
+    <div class="loader-top">
+
+        <div class="loader-brand">
+
+            <div class="loader-mark">
+                S<span>.</span>
+            </div>
+
+            <div class="loader-brand-text">
+                <strong>SAMEER</strong>
+                <small>DIGITAL / MARKETING</small>
+            </div>
+
+        </div>
+
+        <div class="loader-meta">
+            <span>PORTFOLIO</span>
+            <i></i>
+            <strong>2026</strong>
+        </div>
+
+    </div>
+
+
+    <div class="loader-main">
+
+        <div class="loader-bg-text" aria-hidden="true">
+            HELLO
+        </div>
+
+
+        <div class="loader-copy">
+
+            <div class="loader-label">
+                DIGITAL MARKETING / INTRO
+            </div>
+
+            <h1 class="loader-heading">
+                <span>HELLO,</span>
+                <span>I'M <em>SAMEER.</em></span>
+            </h1>
+
+            <div class="loader-skills">
+                <span>SEO</span>
+                <b>×</b>
+                <span>PERFORMANCE</span>
+                <b>×</b>
+                <span>CREATIVE</span>
+            </div>
+
+        </div>
+
+
+        <div class="loader-visual">
+
+            <div class="visual-orb" aria-hidden="true"></div>
+
+            <div class="visual-ring visual-ring-one" aria-hidden="true"></div>
+            <div class="visual-ring visual-ring-two" aria-hidden="true"></div>
+            <div class="visual-ring visual-ring-three" aria-hidden="true"></div>
+
+            <span class="visual-dot dot-one" aria-hidden="true"></span>
+            <span class="visual-dot dot-two" aria-hidden="true"></span>
+            <span class="visual-dot dot-three" aria-hidden="true"></span>
+
+            <div class="visual-chip chip-seo" aria-hidden="true">
+                SEO
+            </div>
+
+            <div class="visual-chip chip-ads" aria-hidden="true">
+                ADS
+            </div>
+
+            <div class="visual-chip chip-social" aria-hidden="true">
+                SOCIAL
+            </div>
+
+            <div class="loader-photo">
+
+                <img
+                    src="loader.png"
+                    alt=""
+                    width="700"
+                    height="900"
+                    fetchpriority="high"
+                    decoding="async"
+                >
+
+                <div class="photo-glow" aria-hidden="true"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="loader-process">
+
+            <div class="process-top">
+                <span>BUILDING EXPERIENCE</span>
+                <strong id="loaderStep">01 / 05</strong>
+            </div>
+
+            <div class="process-items">
+
+                <div class="process-item active" data-process="1">
+                    <span>01</span>
+                    <strong>CONNECTING</strong>
+                    <i>+</i>
+                </div>
+
+                <div class="process-item" data-process="2">
+                    <span>02</span>
+                    <strong>THINKING</strong>
+                    <i>+</i>
+                </div>
+
+                <div class="process-item" data-process="3">
+                    <span>03</span>
+                    <strong>OPTIMISING</strong>
+                    <i>+</i>
+                </div>
+
+                <div class="process-item" data-process="4">
+                    <span>04</span>
+                    <strong>CREATING</strong>
+                    <i>+</i>
+                </div>
+
+                <div class="process-item" data-process="5">
+                    <span>05</span>
+                    <strong>LAUNCHING</strong>
+                    <i>↗</i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="loader-bottom">
+
+        <div class="loader-status">
+
+            <i></i>
+
+            <span id="loaderStatusText">
+                INITIALISING EXPERIENCE
+            </span>
+
+        </div>
+
+
+        <div class="loader-progress">
+
+            <span class="progress-label">
+                LOAD
+            </span>
+
+            <div class="progress-track">
+                <span id="loaderProgressBar"></span>
+            </div>
+
+            <strong id="loaderProgress">
+                00
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <a
+        href="#main-content"
+        class="skip-link"
+    >
+        Skip to content
+    </a>
+
+    
+
+
+    <!-- =========================================================
+         NAVBAR
+    ========================================================== -->
+
+    <header
+        class="site-header"
+        id="siteHeader"
+    >
+
+        <div class="nav-stage">
+
+            <nav
+                class="mega-nav"
+                id="megaNav"
+                aria-label="Primary navigation"
+            >
+
+                <!-- 3D NAV EXTRUSION -->
+                <span
+                    class="nav-depth nav-depth-1"
+                    aria-hidden="true"
+                ></span>
+
+                <span
+                    class="nav-depth nav-depth-2"
+                    aria-hidden="true"
+                ></span>
+
+
+                <!-- AMBIENT LIGHT -->
+                <span
+                    class="nav-light nav-light-orange"
+                    aria-hidden="true"
+                ></span>
+
+                <span
+                    class="nav-light nav-light-blue"
+                    aria-hidden="true"
+                ></span>
+
+
+                <div class="nav-face">
+
+                    <!-- =================================================
+                         BRAND
+                    ================================================== -->
+
+                    <a
+                        href="index.html"
+                        class="nav-brand"
+                        aria-label="Sameer Digital home"
+                    >
+
+                        <span
+                            class="brand-monogram"
+                            aria-hidden="true"
+                        >
+                            S
+                            <b></b>
+                        </span>
+
+
+                        <span class="brand-text">
+
+                            <strong>
+                                SAMEER
+                            </strong>
+
+                            <small>
+                                DIGITAL / MARKETING
+                            </small>
+
+                        </span>
+
+                    </a>
+
+
+                    <!-- =================================================
+                         DESKTOP NAVIGATION
+                    ================================================== -->
+
+                    <div
+                        class="nav-links"
+                        id="desktopNavigation"
+                    >
+
+                        <a
+                            href="index.html"
+                            class="nav-link active"
+                        >
+                            <span class="link-index">01</span>
+                            <span class="link-name">Home</span>
+                        </a>
+
+                        <a
+                            href="about.html"
+                            class="nav-link"
+                        >
+                            <span class="link-index">02</span>
+                            <span class="link-name">About</span>
+                        </a>
+
+                        <a
+                            href="service.html"
+                            class="nav-link"
+                        >
+                            <span class="link-index">03</span>
+                            <span class="link-name">Services</span>
+                        </a>
+
+                        <a
+                            href="portfolio.html"
+                            class="nav-link"
+                        >
+                            <span class="link-index">04</span>
+                            <span class="link-name">Work</span>
+                        </a>
+
+                        <a
+                            href="Blog.html"
+                            class="nav-link"
+                        >
+                            <span class="link-index">05</span>
+                            <span class="link-name">Insights</span>
+                        </a>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         RIGHT STATUS / CTA
+                    ================================================== -->
+
+                    <div class="nav-actions">
+
+                        <span class="nav-availability">
+
+                            <i></i>
+
+                            <span>
+                                Available
+                            </span>
+
+                        </span>
+
+
+                        <a
+                            href="Contact.html"
+                            class="nav-talk magnetic"
+                        >
+
+                            <span>
+                                Let's talk
+                            </span>
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         MOBILE MENU TOGGLE
+                    ================================================== -->
+
+                    <button
+                        type="button"
+                        class="nav-mobile-trigger"
+                        id="navMobileTrigger"
+                        aria-label="Open navigation menu"
+                        aria-controls="mobileMenu"
+                        aria-expanded="false"
+                    >
+
+                        <span class="trigger-text">
+                            MENU
+                        </span>
+
+                        <span class="trigger-icon">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+
+        <!-- =========================================================
+             MOBILE OVERLAY NAV
+        ========================================================== -->
+
+        <section
+            class="mobile-menu"
+            id="mobileMenu"
+            aria-hidden="true"
+            aria-label="Mobile navigation menu"
+        >
+
+            <div
+                class="mobile-menu-bg"
+                aria-hidden="true"
+            >
+
+                <div class="mobile-ring mobile-ring-one"></div>
+
+                <div class="mobile-ring mobile-ring-two"></div>
+
+                <div class="mobile-glow mobile-glow-orange"></div>
+
+                <div class="mobile-glow mobile-glow-blue"></div>
+
+            </div>
+
+
+            <div class="mobile-menu-inner">
+
+
+                <!-- =================================================
+                     MOBILE HEADER
+                ================================================== -->
+
+                <div class="mobile-menu-top">
+
+                    <div>
+
+                        <span class="mobile-mini-label">
+                            Navigation
+                        </span>
+
+                        <span class="mobile-mini-description">
+                            Explore the work &amp; thinking
+                        </span>
+
+                    </div>
+
+
+                    <!-- VERY IMPORTANT:
+                         CLEAR CLOSE BUTTON
+                    -->
+
+                    <button
+                        type="button"
+                        class="mobile-close-button"
+                        id="mobileCloseButton"
+                        aria-label="Close navigation menu"
+                    >
+
+                        <span>
+                            CLOSE
+                        </span>
+
+                        <i class="bi bi-x-lg"></i>
+
+                    </button>
+
+                </div>
+
+
+                <!-- =================================================
+                     MOBILE NAV LINKS
+                ================================================== -->
+
+                <nav
+                    class="mobile-links"
+                    aria-label="Mobile primary navigation"
+                >
+
+                    <a
+                        href="index.html"
+                        class="mobile-link active"
+                    >
+
+                        <span class="mobile-link-meta">
+                            01 / HOME
+                        </span>
+
+                        <strong>
+                            Home
+                        </strong>
+
+                        <span class="mobile-link-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="about.html"
+                        class="mobile-link"
+                    >
+
+                        <span class="mobile-link-meta">
+                            02 / STORY
+                        </span>
+
+                        <strong>
+                            About
+                        </strong>
+
+                        <span class="mobile-link-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="service.html"
+                        class="mobile-link"
+                    >
+
+                        <span class="mobile-link-meta">
+                            03 / EXPERTISE
+                        </span>
+
+                        <strong>
+                            Services
+                        </strong>
+
+                        <span class="mobile-link-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="portfolio.html"
+                        class="mobile-link"
+                    >
+
+                        <span class="mobile-link-meta">
+                            04 / SELECTED WORK
+                        </span>
+
+                        <strong>
+                            Portfolio
+                        </strong>
+
+                        <span class="mobile-link-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="Blog.html"
+                        class="mobile-link"
+                    >
+
+                        <span class="mobile-link-meta">
+                            05 / INSIGHTS
+                        </span>
+
+                        <strong>
+                            Blog
+                        </strong>
+
+                        <span class="mobile-link-arrow">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </span>
+
+                    </a>
+
+                </nav>
+
+
+                <!-- =================================================
+                     MOBILE FOOT
+                ================================================== -->
+
+                <div class="mobile-menu-bottom">
+
+                    <div class="mobile-status">
+
+                        <span class="status-light"></span>
+
+                        <span>
+                            AVAILABLE FOR PROJECTS
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="Contact.html"
+                        class="mobile-contact-link"
+                    >
+
+                        <span>
+                            Start a conversation
+                        </span>
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+         HOME SECTION WILL BE ADDED LATER
+    ========================================================== -->
+
+    <!-- home start  -->
+<main id="main-content" class="dg-home">
+
+    <!-- =====================================================
+         01 / HERO — DIGITAL GROWTH STUDIO
+    ====================================================== -->
+
+    <section class="dg-hero" id="home">
+
+        <div class="dg-hero-grid" aria-hidden="true"></div>
+        <div class="dg-hero-grain" aria-hidden="true"></div>
+        <div class="dg-ambient dg-ambient-orange"></div>
+        <div class="dg-ambient dg-ambient-blue"></div>
+
+        <div class="dg-hero-topline">
+            <span><b>01</b> / DIGITAL GROWTH STUDIO</span>
+            <span class="dg-open-status"><i></i> OPEN TO SELECT PROJECTS</span>
+            <span>INDIA · 2026</span>
+        </div>
+
+
+        <div class="dg-hero-layout">
+
+            <!-- LEFT / TYPOGRAPHY -->
+
+            <div class="dg-hero-copy">
+
+                <div class="dg-eyebrow" data-reveal>
+                    <span class="dg-eyebrow-icon">✳</span>
+                    STRATEGY MEETS EXECUTION
+                </div>
+
+                <h1 class="dg-hero-title" data-reveal>
+                    <span>TURN IDEAS</span>
+                    <span>INTO</span>
+                    <span class="dg-title-orange">
+                        <span id="dgHeroWord">GROWTH.</span>
+                    </span>
+                </h1>
+
+                <p class="dg-hero-description" data-reveal>
+                    SEO, performance marketing and social media —
+                    connected through strategy, strengthened by
+                    creativity and built around business goals.
+                </p>
+
+                <div class="dg-hero-buttons" data-reveal>
+
+                    <a href="portfolio.html" class="dg-btn dg-btn-primary">
+                        <span>Explore my work</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <a
+                        href="assets/Sameer-Resume.pdf"
+                        class="dg-btn dg-btn-secondary"
+                        download
+                    >
+                        <i class="bi bi-download"></i>
+                        <span>Download CV</span>
+                    </a>
+
+                </div>
+
+                <div class="dg-hero-bottom-note" data-reveal>
+                    <span></span>
+                    <p>SEARCH · PAID MEDIA · SOCIAL</p>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT / LARGE 3D PORTRAIT -->
+
+            <div class="dg-hero-stage" id="dgHeroStage">
+
+                <div class="dg-stage-coordinate dg-coordinate-top">
+                    X 052.21 / Y 018.04
+                </div>
+
+                <div class="dg-stage-watermark">GROWTH</div>
+
+                <div class="dg-hero-scene" id="dgHeroScene">
+
+                    <!-- Large dimensional orange sculpture -->
+
+                    <div class="dg-hero-sculpture" aria-hidden="true">
+                        <div class="dg-sculpture-glint"></div>
+                        <div class="dg-sculpture-highlight"></div>
+                    </div>
+
+                    <div class="dg-orbit dg-orbit-one"></div>
+                    <div class="dg-orbit dg-orbit-two"></div>
+                    <div class="dg-orbit dg-orbit-three"></div>
+                    <div class="dg-orbit dg-orbit-four"></div>
+
+                    <span class="dg-orbit-node dg-node-one"></span>
+                    <span class="dg-orbit-node dg-node-two"></span>
+                    <span class="dg-orbit-node dg-node-three"></span>
+                    <span class="dg-orbit-node dg-node-four"></span>
+
+
+                    <!-- Portrait: deliberately no rectangular photo box -->
+
+                    <div class="dg-portrait">
+                        <div class="dg-portrait-backglow"></div>
+
+                        <img
+                            src="loader.png"
+                            alt="Sameer, digital marketing specialist"
+                            width="700"
+                            height="900"
+                            fetchpriority="high"
+                            decoding="async"
+                        >
+
+                        <div class="dg-portrait-bottom-fade"></div>
+                    </div>
+
+
+                    <!-- Small floating SEO dashboard -->
+
+                    <div class="dg-glass-panel dg-seo-panel">
+
+                        <div class="dg-panel-top">
+                            <span class="dg-panel-symbol">↗</span>
+
+                            <div>
+                                <small>ORGANIC GROWTH</small>
+                                <strong>Search intelligence</strong>
+                            </div>
+
+                            <span class="dg-panel-menu">•••</span>
+                        </div>
+
+                        <div class="dg-mini-chart">
+
+                            <div class="dg-chart-label-row">
+                                <span>VISIBILITY</span>
+                                <span>DISCOVER →</span>
+                            </div>
+
+                            <svg viewBox="0 0 240 77" aria-hidden="true">
+
+                                <defs>
+                                    <linearGradient id="dgSeoFill" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#FF641F" stop-opacity=".35"/>
+                                        <stop offset="100%" stop-color="#FF641F" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+
+                                <path
+                                    class="dg-chart-area"
+                                    d="M0 63 C22 59,24 47,45 51 S75 60,95 34 S126 43,145 25 S178 33,200 12 L240 5 L240 77 L0 77Z"
+                                    fill="url(#dgSeoFill)"
+                                />
+
+                                <path
+                                    class="dg-chart-path"
+                                    d="M0 63 C22 59,24 47,45 51 S75 60,95 34 S126 43,145 25 S178 33,200 12 L240 5"
+                                    fill="none"
+                                    stroke="#FF641F"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                                <circle cx="200" cy="12" r="4" fill="#FF641F"/>
+                            </svg>
+
+                        </div>
+
+                        <div class="dg-panel-pills">
+                            <span>TECHNICAL</span>
+                            <span>CONTENT</span>
+                            <span>INTENT</span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Performance dashboard -->
+
+                    <div class="dg-glass-panel dg-paid-panel">
+
+                        <div class="dg-paid-top">
+                            <span class="dg-paid-icon">↗</span>
+                            <span>CAMPAIGN SYSTEM</span>
+                        </div>
+
+                        <div class="dg-paid-headline">
+                            <strong>Reach.</strong>
+                            <strong>Convert<span>.</span></strong>
+                        </div>
+
+                        <div class="dg-paid-bars" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="dg-paid-footer">
+                            PERFORMANCE / PAID MEDIA
+                        </div>
+
+                    </div>
+
+
+                    <!-- Floating skill chips -->
+
+                    <div class="dg-float-label dg-float-social">
+                        <span>✳</span>
+                        <div>
+                            <strong>SOCIAL</strong>
+                            <small>Brand presence</small>
+                        </div>
+                    </div>
+
+                    <div class="dg-float-label dg-float-creative">
+                        <span>◈</span>
+                        <div>
+                            <strong>CREATIVE</strong>
+                            <small>Ideas into visuals</small>
+                        </div>
+                    </div>
+
+
+                    <!-- Tiny signature -->
+
+                    <div class="dg-hero-signature">
+                        <span>S.</span>
+                        <i></i>
+                        STRATEGY × EXECUTION
+                    </div>
+
+                </div>
+
+                <div class="dg-stage-coordinate dg-coordinate-bottom">
+                    DIGITAL / SYSTEM 001
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Moving ticker -->
+
+        <div class="dg-hero-ticker">
+
+            <div class="dg-ticker-label">
+                <span>↓</span>
+                SCROLL TO EXPLORE
+            </div>
+
+            <div class="dg-ticker-window">
+                <div class="dg-ticker-track">
+
+                    <span>SEO</span><b>✳</b>
+                    <span>PERFORMANCE MARKETING</span><b>✳</b>
+                    <span>SOCIAL MEDIA</span><b>✳</b>
+                    <span>WEBSITE CREATION</span><b>✳</b>
+                    <span>CREATIVE EXECUTION</span><b>✳</b>
+
+                    <span>SEO</span><b>✳</b>
+                    <span>PERFORMANCE MARKETING</span><b>✳</b>
+                    <span>SOCIAL MEDIA</span><b>✳</b>
+                    <span>WEBSITE CREATION</span><b>✳</b>
+                    <span>CREATIVE EXECUTION</span><b>✳</b>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         02 / STATEMENT
+    ====================================================== -->
+
+    <section class="dg-manifesto">
+
+        <div class="dg-container">
+
+            <div class="dg-section-meta dg-light-meta">
+                <span>02 / THE BIGGER PICTURE</span>
+                <span>ONE CONNECTED ECOSYSTEM</span>
+            </div>
+
+            <div class="dg-manifesto-layout">
+
+                <div class="dg-manifesto-rail">
+                    <span>S / DIGITAL</span>
+                    <span class="dg-manifesto-star">✳</span>
+                </div>
+
+                <div class="dg-manifesto-content" data-reveal>
+
+                    <p class="dg-manifesto-kicker">
+                        MARKETING WORKS BETTER WHEN IT CONNECTS.
+                    </p>
+
+                    <h2>
+                        Get <span>discovered.</span><br>
+                        Earn <span>attention.</span><br>
+                        Create <span>momentum.</span>
+                    </h2>
+
+                    <div class="dg-manifesto-bottom">
+
+                        <p>
+                            Search creates discoverability. Performance
+                            marketing reaches relevant audiences. Social
+                            helps build a recognisable brand. The real
+                            opportunity is making these channels work together.
+                        </p>
+
+                        <div class="dg-manifesto-stamp">
+                            THINK <b>×</b> CREATE <b>×</b> OPTIMISE
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="dg-manifesto-orbit dg-manifesto-orbit-a"></div>
+        <div class="dg-manifesto-orbit dg-manifesto-orbit-b"></div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         03 / INTERACTIVE GROWTH LAB
+    ====================================================== -->
+
+    <section class="dg-growth-lab" id="growth-lab">
+
+        <div class="dg-container">
+
+            <div class="dg-section-header">
+
+                <div>
+                    <span class="dg-kicker">03 / THE GROWTH LAB</span>
+
+                    <h2 class="dg-section-title">
+                        Three channels.<br>
+                        <span>One direction.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Explore how organic visibility, paid acquisition
+                    and social presence serve different roles within
+                    a wider digital strategy.
+                </p>
+
+            </div>
+
+
+            <div class="dg-lab-layout">
+
+                <!-- Interactive buttons -->
+
+                <div class="dg-lab-tabs" role="tablist" aria-label="Marketing channels">
+
+                    <button
+                        class="dg-lab-tab active"
+                        type="button"
+                        role="tab"
+                        aria-selected="true"
+                        data-lab="seo"
+                    >
+                        <span>01</span>
+                        <span>
+                            <strong>SEO & Organic Growth</strong>
+                            <small>Search visibility, keyword strategy & organic traffic.</small>
+                        </span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                    <button
+                        class="dg-lab-tab"
+                        type="button"
+                        role="tab"
+                        aria-selected="false"
+                        data-lab="performance"
+                    >
+                        <span>02</span>
+                        <span>
+                            <strong>Performance Marketing</strong>
+                            <small>Google Ads, Meta Ads & campaign optimisation.</small>
+                        </span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                    <button
+                        class="dg-lab-tab"
+                        type="button"
+                        role="tab"
+                        aria-selected="false"
+                        data-lab="social"
+                    >
+                        <span>03</span>
+                        <span>
+                            <strong>Social media Management</strong>
+                            <small>Content planning, post creation, brand consistency & audience engagement.</small>
+                        </span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                    <div class="dg-lab-bottom-note">
+                        <span class="dg-lab-live-dot"></span>
+                        SELECT A CHANNEL TO EXPLORE
+                    </div>
+
+                </div>
+
+
+                <!-- Interactive visual changes with tab -->
+
+                <div class="dg-lab-display" id="dgLabDisplay">
+
+                    <div class="dg-lab-display-grid"></div>
+
+                    <div class="dg-lab-display-heading">
+                        <span id="dgLabCode">SYSTEM / 001</span>
+                        <span>ILLUSTRATIVE VISUAL</span>
+                    </div>
+
+
+                    <!-- SEO visual -->
+
+                    <div class="dg-lab-scene dg-lab-scene-seo">
+
+                        <div class="dg-search-window">
+
+                            <div class="dg-search-top">
+                                <span class="dg-search-dot"></span>
+                                <span>SEARCH / DISCOVER</span>
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                            <div class="dg-search-query">
+                                <span>Understand search intent</span>
+                                <i>↗</i>
+                            </div>
+
+                            <div class="dg-search-result">
+                                <span class="dg-result-line long"></span>
+                                <span class="dg-result-line medium"></span>
+                                <span class="dg-result-line short"></span>
+                            </div>
+
+                            <div class="dg-search-result dg-result-highlight">
+                                <span class="dg-result-badge">RELEVANCE</span>
+                                <span class="dg-result-line long"></span>
+                                <span class="dg-result-line medium"></span>
+                            </div>
+
+                            <div class="dg-search-result">
+                                <span class="dg-result-line medium"></span>
+                                <span class="dg-result-line short"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="dg-scene-float dg-seo-float-a">
+                            <span>↗</span>
+                            TECHNICAL SEO
+                        </div>
+
+                        <div class="dg-scene-float dg-seo-float-b">
+                            CONTENT × INTENT
+                        </div>
+
+                    </div>
+
+
+                    <!-- Performance visual -->
+
+                    <div class="dg-lab-scene dg-lab-scene-performance" hidden>
+
+                        <div class="dg-campaign-window">
+
+                            <div class="dg-campaign-window-top">
+                                <span>CAMPAIGN WORKSPACE</span>
+                                <span class="dg-window-status">● ACTIVE VIEW</span>
+                            </div>
+
+                            <div class="dg-campaign-intro">
+                                <span>CAMPAIGN STRATEGY</span>
+                                <strong>Reach the right audience.</strong>
+                            </div>
+
+                            <div class="dg-campaign-graph">
+
+                                <div class="dg-graph-labels">
+                                    <span>PLANNING</span>
+                                    <span>OPTIMISATION</span>
+                                    <span>LEARNING</span>
+                                </div>
+
+                                <svg viewBox="0 0 420 145" aria-hidden="true">
+                                    <g stroke="rgba(255,255,255,.10)" stroke-width="1">
+                                        <path d="M0 30H420 M0 65H420 M0 100H420 M0 135H420"/>
+                                    </g>
+                                    <path
+                                        class="dg-campaign-path"
+                                        d="M0 116 C34 111,43 88,82 94 S136 109,168 70 S222 81,255 53 S312 62,343 34 S389 40,420 12"
+                                        stroke="#FF641F"
+                                        stroke-width="3"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                    />
+                                    <circle cx="343" cy="34" r="5" fill="#FF641F"/>
+                                    <circle cx="420" cy="12" r="5" fill="#fff"/>
+                                </svg>
+
+                            </div>
+
+                            <div class="dg-campaign-tags">
+                                <span>GOOGLE ADS</span>
+                                <span>META ADS</span>
+                                <span>TEST & LEARN</span>
+                            </div>
+
+                        </div>
+
+                        <div class="dg-campaign-orbit"></div>
+
+                    </div>
+
+
+                    <!-- Social visual -->
+
+                    <div class="dg-lab-scene dg-lab-scene-social" hidden>
+
+                        <div class="dg-social-board">
+
+                            <div class="dg-social-board-top">
+                                <span>CONTENT STUDIO</span>
+                                <span>03 / CREATIVE MIX</span>
+                            </div>
+
+                            <div class="dg-social-board-grid">
+                                <div class="dg-social-tile dg-social-tile-orange">
+                                    <span>MAKE IT<br>MATTER.</span>
+                                </div>
+
+                                <div class="dg-social-tile dg-social-tile-photo">
+                                    <span>01</span>
+                                </div>
+
+                                <div class="dg-social-tile dg-social-tile-blue">
+                                    <span>IDEAS<br>IN MOTION</span>
+                                </div>
+
+                                <div class="dg-social-tile dg-social-tile-paper">
+                                    <span>BRAND<br>VOICE ↗</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="dg-social-float">
+                            <span>✳</span>
+                            <div>
+                                <strong>CONTENT DIRECTION</strong>
+                                <small>Visual consistency / voice / relevance</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="dg-lab-description">
+
+                        <div>
+                            <span id="dgLabEyebrow">01 / DISCOVERABILITY</span>
+                            <h3 id="dgLabTitle">Help the right people find you.</h3>
+                        </div>
+
+                        <p id="dgLabText">
+                            Build around search intent, technical foundations,
+                            relevant content and a clear internal structure.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         04 / SPECIALISMS
+    ====================================================== -->
+
+    <section class="dg-specialisms" id="expertise">
+
+        <div class="dg-container">
+
+            <div class="dg-section-header">
+
+                <div>
+                    <span class="dg-kicker">04 / CORE EXPERTISE</span>
+
+                    <h2 class="dg-section-title">
+                        Where strategy<br>
+                        <span>gets practical.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Focused execution across the channels that matter —
+                    supported by research, analysis, creative thinking
+                    and continuous optimisation.
+                </p>
+
+            </div>
+
+
+            <div class="dg-specialism-grid">
+
+
+                <!-- SEO -->
+
+                <article class="dg-specialism-card dg-specialism-seo" data-reveal>
+
+                    <div class="dg-specialism-top">
+                        <span>01 / ORGANIC</span>
+                        <i>↗</i>
+                    </div>
+
+                    <div class="dg-seo-art">
+
+                        <div class="dg-seo-ring dg-seo-ring-a"></div>
+                        <div class="dg-seo-ring dg-seo-ring-b"></div>
+
+                        <div class="dg-seo-core">
+                            <strong>SEO</strong>
+                            <small>FINDABILITY</small>
+                        </div>
+
+                        <span class="dg-seo-orbit-chip dg-seo-chip-a">INTENT</span>
+                        <span class="dg-seo-orbit-chip dg-seo-chip-b">CONTENT</span>
+                        <span class="dg-seo-orbit-chip dg-seo-chip-c">TECH</span>
+
+                    </div>
+
+                    <div class="dg-specialism-copy">
+                        <span class="dg-specialism-overline">BUILD ORGANIC VISIBILITY</span>
+
+                        <h3>Search<br><em>optimisation.</em></h3>
+
+                        <p>
+                            Technical SEO, on-page improvements, keyword
+                            strategy, content direction, internal linking
+                            and search performance analysis.
+                        </p>
+
+                        <div class="dg-specialism-tags">
+                            <span>TECHNICAL</span>
+                            <span>ON-PAGE</span>
+                            <span>CONTENT</span>
+                            <span>ANALYSIS</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Performance -->
+
+                <article class="dg-specialism-card dg-specialism-paid" data-reveal>
+
+                    <div class="dg-specialism-top">
+                        <span>02 / ACQUISITION</span>
+                        <i>↗</i>
+                    </div>
+
+                    <div class="dg-paid-art">
+
+                        <div class="dg-paid-orbit dg-paid-orbit-a"></div>
+                        <div class="dg-paid-orbit dg-paid-orbit-b"></div>
+                        <div class="dg-paid-orbit dg-paid-orbit-c"></div>
+
+                        <div class="dg-paid-core">↗</div>
+
+                        <span class="dg-paid-tag dg-paid-tag-a">TEST</span>
+                        <span class="dg-paid-tag dg-paid-tag-b">LEARN</span>
+                        <span class="dg-paid-tag dg-paid-tag-c">OPTIMISE</span>
+
+                    </div>
+
+                    <div class="dg-specialism-copy">
+                        <span class="dg-specialism-overline">TURN ATTENTION INTO ACTION</span>
+
+                        <h3>Performance<br><em>marketing.</em></h3>
+
+                        <p>
+                            Google Ads, Meta Ads, campaign structure,
+                            audience strategy, creative testing and
+                            performance-focused optimisation.
+                        </p>
+
+                        <div class="dg-specialism-tags">
+                            <span>GOOGLE ADS</span>
+                            <span>META ADS</span>
+                            <span>CAMPAIGNS</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Social -->
+
+                <article class="dg-specialism-card dg-specialism-social" data-reveal>
+
+                    <div class="dg-specialism-top">
+                        <span>03 / BRAND PRESENCE</span>
+                        <i>↗</i>
+                    </div>
+
+                    <div class="dg-social-art">
+
+                        <div class="dg-social-orbit"></div>
+
+                        <div class="dg-content-mosaic">
+
+                            <div class="dg-mosaic-tile dg-mosaic-orange">
+                                <span>MAKE<br>IT COUNT.</span>
+                            </div>
+
+                            <div class="dg-mosaic-tile dg-mosaic-image">
+                                <span>01</span>
+                            </div>
+
+                            <div class="dg-mosaic-tile dg-mosaic-blue">
+                                <span>IDEAS<br>IN MOTION</span>
+                            </div>
+
+                            <div class="dg-mosaic-tile dg-mosaic-paper">
+                                <span>BRAND<br>VOICE ↗</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dg-specialism-copy">
+                        <span class="dg-specialism-overline">MAKE THE BRAND MEMORABLE</span>
+
+                        <h3>Social<br><em>presence.</em></h3>
+
+                        <p>
+                            Social media handling, content direction,
+                            creative consistency and audience-focused
+                            communication across platforms.
+                        </p>
+
+                        <div class="dg-specialism-tags">
+                            <span>CONTENT</span>
+                            <span>HANDLING</span>
+                            <span>COMMUNITY</span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         05 / BEYOND THE CORE
+    ====================================================== -->
+
+    <section class="dg-creative" id="capabilities">
+
+        <div class="dg-container">
+
+            <div class="dg-section-meta">
+                <span>05 / CREATIVE EXECUTION</span>
+                <span>BEYOND THE CORE</span>
+            </div>
+
+
+            <div class="dg-creative-heading">
+
+                <h2>
+                    Good ideas deserve<br>
+                    <span>good execution.</span>
+                </h2>
+
+                <p>
+                    I also work across the creative and technical
+                    pieces that make digital marketing feel complete.
+                </p>
+
+            </div>
+
+
+            <div class="dg-creative-grid">
+
+
+                <!-- Website -->
+
+                <a href="service.html" class="dg-creative-card dg-web-card" data-reveal>
+
+                    <div class="dg-creative-card-top">
+                        <span>01 / DIGITAL</span>
+                        <i>↗</i>
+                    </div>
+
+                    <div class="dg-browser-visual">
+
+                        <div class="dg-browser-top">
+                            <i></i><i></i><i></i>
+                            <span>digital-experience.site</span>
+                        </div>
+
+                        <div class="dg-browser-main">
+
+                            <span class="dg-browser-kicker">A CLEARER DIGITAL PRESENCE</span>
+
+                            <strong>Designed<br>with intent.</strong>
+
+                            <div class="dg-browser-button"></div>
+                            <div class="dg-browser-shape"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dg-creative-card-copy">
+                        <h3>Website creation</h3>
+                        <p>Landing pages, responsive layouts and digital experiences.</p>
+                    </div>
+
+                </a>
+
+
+                <!-- Graphic design -->
+
+                <a href="service.html" class="dg-creative-card dg-design-card" data-reveal>
+
+                    <div class="dg-creative-card-top">
+                        <span>02 / VISUALS</span>
+                        <i>↗</i>
+                    </div>
+
+                    <div class="dg-design-visual">
+
+                        <div class="dg-design-sphere"></div>
+                        <div class="dg-design-outline"></div>
+
+                        <div class="dg-design-type">
+                            MAKE<br>
+                            <span>IT</span><br>
+                            MATTER.
+                        </div>
+
+                        <span class="dg-design-index">ART DIRECTION / 002</span>
+
+                    </div>
+
+                    <div class="dg-creative-card-copy">
+                        <h3>Graphic design</h3>
+                        <p>Campaign creatives, visual direction and brand consistency.</p>
+                    </div>
+
+                </a>
+
+
+                <!-- Video -->
+
+                <a href="service.html" class="dg-creative-card dg-video-card" data-reveal>
+
+                    <div class="dg-creative-card-top">
+                        <span>03 / MOTION</span>
+                        <i>↗</i>
+                    </div>
+
+                    <div class="dg-video-visual">
+
+                        <div class="dg-video-frame dg-video-frame-a"></div>
+                        <div class="dg-video-frame dg-video-frame-b"></div>
+                        <div class="dg-video-frame dg-video-frame-c">
+                            <span>STORY</span>
+                        </div>
+
+                        <div class="dg-video-play">▶</div>
+
+                        <div class="dg-video-timeline">
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                    <div class="dg-creative-card-copy">
+                        <h3>Video editing</h3>
+                        <p>Short-form content, reels and campaign storytelling.</p>
+                    </div>
+
+                </a>
+
+
+                <!-- Digital strategy -->
+
+                <div class="dg-creative-card dg-strategy-card" data-reveal>
+
+                    <div class="dg-creative-card-top">
+                        <span>04 / CONNECTED THINKING</span>
+                        <i>✳</i>
+                    </div>
+
+                    <div class="dg-strategy-visual">
+
+                        <div class="dg-strategy-core">IDEA</div>
+
+                        <span class="dg-strategy-node dg-strategy-node-a">SEARCH</span>
+                        <span class="dg-strategy-node dg-strategy-node-b">MEDIA</span>
+                        <span class="dg-strategy-node dg-strategy-node-c">SOCIAL</span>
+                        <span class="dg-strategy-node dg-strategy-node-d">CREATIVE</span>
+
+                        <div class="dg-strategy-connector dg-connector-a"></div>
+                        <div class="dg-strategy-connector dg-connector-b"></div>
+
+                    </div>
+
+                    <div class="dg-creative-card-copy">
+                        <h3>Digital strategy</h3>
+                        <p>Connecting channels, insights and creative execution.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         06 / WORKING METHOD
+    ====================================================== -->
+
+    <section class="dg-process">
+
+        <div class="dg-container">
+
+            <div class="dg-section-header">
+
+                <div>
+                    <span class="dg-kicker">06 / HOW I APPROACH THE WORK</span>
+
+                    <h2 class="dg-section-title">
+                        From the first<br>
+                        <span>question to action.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    A clear process helps connect research, strategy,
+                    implementation and continuous improvement.
+                </p>
+
+            </div>
+
+
+            <div class="dg-process-layout">
+
+                <div class="dg-process-line">
+                    <span></span>
+                </div>
+
+
+                <article class="dg-process-step" data-reveal>
+
+                    <div class="dg-step-number">01</div>
+
+                    <div class="dg-step-main">
+                        <span>UNDERSTAND</span>
+                        <h3>Discover the opportunity.</h3>
+                        <p>
+                            Start with the business, audience, search
+                            intent, market context and the challenge
+                            that actually needs solving.
+                        </p>
+                    </div>
+
+                    <div class="dg-step-side">
+                        <span>RESEARCH</span>
+                        <i>◎</i>
+                    </div>
+
+                </article>
+
+
+                <article class="dg-process-step" data-reveal>
+
+                    <div class="dg-step-number">02</div>
+
+                    <div class="dg-step-main">
+                        <span>PLAN</span>
+                        <h3>Build the strategy.</h3>
+                        <p>
+                            Prioritise opportunities, select relevant
+                            channels and define what success needs
+                            to look like before execution begins.
+                        </p>
+                    </div>
+
+                    <div class="dg-step-side">
+                        <span>DIRECTION</span>
+                        <i>↗</i>
+                    </div>
+
+                </article>
+
+
+                <article class="dg-process-step" data-reveal>
+
+                    <div class="dg-step-number">03</div>
+
+                    <div class="dg-step-main">
+                        <span>EXECUTE</span>
+                        <h3>Put the ideas to work.</h3>
+                        <p>
+                            Implement the plan through optimisation,
+                            campaigns, content and the right
+                            supporting creative assets.
+                        </p>
+                    </div>
+
+                    <div class="dg-step-side">
+                        <span>IMPLEMENT</span>
+                        <i>✳</i>
+                    </div>
+
+                </article>
+
+
+                <article class="dg-process-step" data-reveal>
+
+                    <div class="dg-step-number">04</div>
+
+                    <div class="dg-step-main">
+                        <span>REFINE</span>
+                        <h3>Learn from the evidence.</h3>
+                        <p>
+                            Review meaningful performance signals,
+                            find gaps and improve the work through
+                            deliberate testing and iteration.
+                        </p>
+                    </div>
+
+                    <div class="dg-step-side">
+                        <span>OPTIMISE</span>
+                        <i>↻</i>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         07 / SELECTED WORK
+    ====================================================== -->
+
+    <section class="dg-work" id="selected-work">
+
+        <div class="dg-container">
+
+            <div class="dg-section-header">
+
+                <div>
+                    <span class="dg-kicker">07 / SELECTED WORK</span>
+
+                    <h2 class="dg-section-title">
+                        Strategy in<br>
+                        <span>the real world.</span>
+                    </h2>
+                </div>
+
+                <a href="portfolio.html" class="dg-text-link">
+                    Explore portfolio
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="dg-work-grid">
+
+
+                <a href="portfolio.html" class="dg-work-card dg-work-wide" data-reveal>
+
+                    <div class="dg-work-art dg-work-seo">
+
+                        <span class="dg-work-project-index">CONCEPT / 01</span>
+
+                        <div class="dg-work-seo-orbits"></div>
+                        <div class="dg-work-seo-orbits dg-work-seo-orbits-b"></div>
+
+                        <strong>SEARCH.</strong>
+
+                        <span class="dg-work-art-caption">ORGANIC VISIBILITY</span>
+
+                    </div>
+
+                    <div class="dg-work-caption-row">
+                        <div>
+                            <span>SEO / ORGANIC GROWTH</span>
+                            <h3>Search foundations</h3>
+                        </div>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </a>
+
+
+                <a href="portfolio.html" class="dg-work-card" data-reveal>
+
+                    <div class="dg-work-art dg-work-paid">
+
+                        <span class="dg-work-project-index">CONCEPT / 02</span>
+
+                        <div class="dg-work-paid-copy">
+                            <span>ATTENTION</span>
+                            <strong>IN<br>MOTION<span>.</span></strong>
+                        </div>
+
+                        <div class="dg-work-paid-ring"></div>
+
+                        <span class="dg-work-art-caption">PAID ACQUISITION</span>
+
+                    </div>
+
+                    <div class="dg-work-caption-row">
+                        <div>
+                            <span>PERFORMANCE / PAID MEDIA</span>
+                            <h3>Campaign systems</h3>
+                        </div>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </a>
+
+
+                <a href="portfolio.html" class="dg-work-card" data-reveal>
+
+                    <div class="dg-work-art dg-work-social">
+
+                        <span class="dg-work-project-index">CONCEPT / 03</span>
+
+                        <div class="dg-work-social-mosaic">
+                            <span>IDEAS</span>
+                            <span>VOICE</span>
+                            <span>IDENTITY</span>
+                            <span>STORIES</span>
+                        </div>
+
+                        <span class="dg-work-art-caption">BRAND PRESENCE</span>
+
+                    </div>
+
+                    <div class="dg-work-caption-row">
+                        <div>
+                            <span>SOCIAL / CREATIVE</span>
+                            <h3>Content direction</h3>
+                        </div>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+
+                </a>
+
+            </div>
+
+            <p class="dg-work-disclaimer">
+                The artwork above is illustrative. Replace these concepts with real
+                projects, screenshots and verified results before publishing.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         08 / ABOUT + CV
+    ====================================================== -->
+
+    <section class="dg-about">
+
+        <div class="dg-container">
+
+            <div class="dg-section-meta">
+                <span>08 / THE PERSON BEHIND THE STRATEGY</span>
+                <span>THINKER · BUILDER · MARKETER</span>
+            </div>
+
+
+            <div class="dg-about-layout">
+
+                <div class="dg-about-emblem">
+                    <div class="dg-about-emblem-ring"></div>
+                    <div class="dg-about-emblem-core">S<span>.</span></div>
+                    <span class="dg-about-emblem-label">DIGITAL / MARKETING</span>
+                </div>
+
+
+                <div class="dg-about-copy">
+
+                    <span class="dg-kicker">A LITTLE ABOUT ME</span>
+
+                    <h2>
+                        Curious by nature.<br>
+                        <span>Strategic by design.</span>
+                    </h2>
+
+                    <p>
+                        I'm Sameer — a digital marketing specialist focused
+                        on SEO, performance marketing and social media.
+                        I enjoy understanding how people search, what
+                        makes a message resonate and how good execution
+                        brings a strategy to life.
+                    </p>
+
+                    <p>
+                        My approach combines analytical thinking with
+                        creative execution, so the work is not just
+                        visually interesting — it has a clear purpose.
+                    </p>
+
+                    <div class="dg-about-actions">
+
+                        <a href="about.html" class="dg-btn dg-btn-primary">
+                            <span>More about me</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                        <a
+                            href="assets/Sameer-Resume.pdf"
+                            class="dg-btn dg-btn-outline"
+                            download
+                        >
+                            <i class="bi bi-file-earmark-arrow-down"></i>
+                            <span>Download résumé</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         09 / FINAL CTA
+    ====================================================== -->
+
+    <section class="dg-final-cta">
+
+        <div class="dg-cta-grid"></div>
+        <div class="dg-cta-sphere"></div>
+        <div class="dg-cta-orbit dg-cta-orbit-a"></div>
+        <div class="dg-cta-orbit dg-cta-orbit-b"></div>
+
+        <div class="dg-container dg-cta-inner">
+
+            <div class="dg-section-meta">
+                <span>09 / YOUR NEXT MOVE</span>
+                <span>LET'S MAKE IT COUNT</span>
+            </div>
+
+            <p class="dg-cta-kicker" data-reveal>
+                HAVE AN IDEA? LET'S GIVE IT DIRECTION.
+            </p>
+
+            <h2 data-reveal>
+                Let's create<br>
+                something <span>meaningful.</span>
+            </h2>
+
+            <p class="dg-cta-description" data-reveal>
+                Have a brand, campaign or digital challenge?
+                Let's discuss the right strategy and execution
+                to move it forward.
+            </p>
+
+            <a href="Contact.html" class="dg-btn dg-btn-light" data-reveal>
+                <span>Start a conversation</span>
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+            <div class="dg-cta-footer">
+                STRATEGY WITH INTENT <span>✳</span> EXECUTION WITH PURPOSE
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+    <!-- home end  -->
+
+
+
+
+    <!-- =========================================================
+         ADVANCED FOOTER
+    ========================================================== -->
+
+    <footer class="site-footer">
+
+        <!-- ambient shapes -->
+        <div
+            class="footer-orbit orbit-one"
+            aria-hidden="true"
+        ></div>
+
+        <div
+            class="footer-orbit orbit-two"
+            aria-hidden="true"
+        ></div>
+
+        <div
+            class="footer-glow footer-glow-orange"
+            aria-hidden="true"
+        ></div>
+
+        <div
+            class="footer-glow footer-glow-blue"
+            aria-hidden="true"
+        ></div>
+
+
+        <div class="container">
+
+
+            <!-- =====================================================
+                 GIANT FOOTER CTA
+            ====================================================== -->
+
+            <div class="footer-hero">
+
+                <div class="footer-eyebrow">
+
+                    <span class="eyebrow-dot"></span>
+
+                    LET'S BUILD SOMETHING MEMORABLE
+
+                </div>
+
+
+                <h2 class="footer-title">
+
+                    Your next
+                    <span>big idea</span>
+
+                    deserves
+                    attention.
+
+                </h2>
+
+
+                <p class="footer-copy">
+
+                    From search visibility to paid campaigns,
+                    creative direction and digital experiences,
+                    I bring strategy and execution together
+                    to help brands grow with purpose.
+
+                </p>
+
+
+                <a
+                    href="Contact.html"
+                    class="footer-main-cta magnetic"
+                >
+
+                    <span>
+                        Start a project
+                    </span>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- =====================================================
+                 FOOTER MARQUEE
+            ====================================================== -->
+
+            <div
+                class="footer-marquee"
+                aria-hidden="true"
+            >
+
+                <div class="marquee-track">
+
+                    <span>
+                        SEO
+                    </span>
+
+                    <b>✦</b>
+
+                    <span>
+                        PERFORMANCE
+                    </span>
+
+                    <b>✦</b>
+
+                    <span>
+                        CREATIVE
+                    </span>
+
+                    <b>✦</b>
+
+                    <span>
+                        SOCIAL
+                    </span>
+
+                    <b>✦</b>
+
+                    <span>
+                        DIGITAL
+                    </span>
+
+                    <b>✦</b>
+
+                    <span>
+                        GROWTH
+                    </span>
+
+                    <b>✦</b>
+
+                    <span>
+                        SEO
+                    </span>
+
+                    <b>✦</b>
+
+                    <span>
+                        PERFORMANCE
+                    </span>
+
+                    <b>✦</b>
+
+                    <span>
+                        CREATIVE
+                    </span>
+
+                    <b>✦</b>
+
+                    <span>
+                        SOCIAL
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================================
+                 FOOTER CONTENT
+            ====================================================== -->
+
+            <div class="footer-content">
+
+
+                <!-- ================= COLUMN 1 ================= -->
+
+                <div class="footer-brand-column">
+
+                    <a
+                        href="index.html"
+                        class="footer-brand"
+                    >
+
+                        <span class="footer-brand-symbol">
+                            S
+                        </span>
+
+                        <span>
+
+                            <strong>
+                                SAMEER
+                            </strong>
+
+                            <small>
+                                DIGITAL / MARKETING
+                            </small>
+
+                        </span>
+
+                    </a>
+
+
+                    <p class="footer-brand-description">
+
+                        A digital marketing specialist focused on
+                        making brands more visible, more useful
+                        and harder to ignore.
+
+                    </p>
+
+
+                    <div class="footer-socials">
+
+                        <a
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                        >
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COLUMN 2 ================= -->
+
+                <div class="footer-column">
+
+                    <span class="footer-column-heading">
+                        Explore
+                    </span>
+
+
+                    <nav
+                        class="footer-nav-links"
+                        aria-label="Footer navigation"
+                    >
+
+                        <a href="index.html">
+                            <span>01</span>
+                            Home
+                        </a>
+
+                        <a href="about.html">
+                            <span>02</span>
+                            About
+                        </a>
+
+                        <a href="service.html">
+                            <span>03</span>
+                            Services
+                        </a>
+
+                        <a href="portfolio.html">
+                            <span>04</span>
+                            Portfolio
+                        </a>
+
+                        <a href="Blog.html">
+                            <span>05</span>
+                            Blog
+                        </a>
+
+                        <a href="Contact.html">
+                            <span>06</span>
+                            Contact
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- ================= COLUMN 3 ================= -->
+
+                <div class="footer-column">
+
+                    <span class="footer-column-heading">
+                        Expertise
+                    </span>
+
+
+                    <div class="footer-expertise">
+
+                        <a href="service.html">
+                            SEO
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                        <a href="service.html">
+                            Google Ads
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                        <a href="service.html">
+                            Meta Ads
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                        <a href="service.html">
+                            Social Media
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                        <a href="service.html">
+                            Creative Strategy
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                        <a href="service.html">
+                            Web Experiences
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COLUMN 4 ================= -->
+
+                <div class="footer-column footer-contact-column">
+
+                    <span class="footer-column-heading">
+                        Let's connect
+                    </span>
+
+
+                    <p class="footer-contact-label">
+                        HAVE A PROJECT IN MIND?
+                    </p>
+
+
+                    <a
+                        href="mailto:sameerkerekar37@gmail.com"
+                        class="footer-email"
+                    >
+                        sameerkerekar37@gmail.com
+                    </a>
+
+
+                    <div class="footer-availability">
+
+                        <span class="availability-dot"></span>
+
+                        <div>
+
+                            <strong>
+                                Available for work
+                            </strong>
+
+                            <small>
+                                Open to select projects,
+                                collaborations &amp; opportunities.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================================
+                 FOOTER BOTTOM
+            ====================================================== -->
+
+            <div class="footer-bottom">
+
+                <span>
+                    © <span id="footerYear"></span>
+                    Sameer. All rights reserved.
+                </span>
+
+
+                <span class="footer-built">
+
+                    Designed for growth.
+                    Built for the web.
+
+                </span>
+
+
+                <a
+                    href="#main-content"
+                    class="footer-top-link"
+                >
+
+                    <span>
+                        Back to top
+                    </span>
+
+                    <i class="bi bi-arrow-up"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         GSAP
+    ========================================================== -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+
+
+    <!-- YOUR JS -->
+
+<script>
+(function () {
+    "use strict";
+
+    const loader = document.getElementById("sameerLoader");
+    if (!loader) return;
+
+    const TOTAL = 3000;
+    const progressBar = document.getElementById("loaderProgressBar");
+    const progressNumber = document.getElementById("loaderProgress");
+    const stepNumber = document.getElementById("loaderStep");
+    const statusText = document.getElementById("loaderStatusText");
+    const items = loader.querySelectorAll(".process-item");
+
+    const steps = [
+        ["01 / 05", "INITIALISING EXPERIENCE"],
+        ["02 / 05", "UNDERSTANDING THE BRAND"],
+        ["03 / 05", "OPTIMISING DIGITAL GROWTH"],
+        ["04 / 05", "CRAFTING THE EXPERIENCE"],
+        ["05 / 05", "LAUNCHING THE EXPERIENCE"]
+    ];
+
+    document.documentElement.classList.add("loader-active");
+    document.body.classList.add("loader-active");
+
+    loader.style.setProperty("display", "block", "important");
+    loader.style.setProperty("visibility", "visible", "important");
+    loader.style.setProperty("opacity", "1", "important");
+
+    function setStep(index) {
+        items.forEach((item, i) => {
+            item.classList.toggle("active", i === index);
+        });
+
+        if (stepNumber) stepNumber.textContent = steps[index][0];
+        if (statusText) statusText.textContent = steps[index][1];
+    }
+
+    setStep(0);
+
+    const start = performance.now();
+
+    function frame(now) {
+        const elapsed = now - start;
+        const percent = Math.min(100, (elapsed / TOTAL) * 100);
+        const rounded = Math.round(percent);
+
+        if (progressBar) progressBar.style.width = percent + "%";
+        if (progressNumber) {
+            progressNumber.textContent = String(rounded).padStart(2, "0");
+        }
+
+        if (percent < 20) setStep(0);
+        else if (percent < 40) setStep(1);
+        else if (percent < 60) setStep(2);
+        else if (percent < 80) setStep(3);
+        else setStep(4);
+
+        if (elapsed < TOTAL) {
+            requestAnimationFrame(frame);
+        }
+    }
+
+    requestAnimationFrame(frame);
+
+    setTimeout(() => {
+        if (progressBar) progressBar.style.width = "100%";
+        if (progressNumber) progressNumber.textContent = "100";
+        setStep(4);
+
+        loader.style.transition =
+            "opacity 220ms cubic-bezier(.77,0,.18,1)";
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+            loader.remove();
+
+            document.documentElement.classList.remove("loader-active");
+            document.body.classList.remove("loader-active");
+
+            document.documentElement.style.removeProperty("overflow");
+            document.body.style.removeProperty("overflow");
+
+            window.dispatchEvent(
+                new CustomEvent("portfolioLoaderComplete")
+            );
+        }, 230);
+    }, TOTAL);
+})();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

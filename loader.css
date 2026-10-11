@@ -1,0 +1,1118 @@
+/* =========================================================
+   SAMEER PORTFOLIO LOADER
+   ========================================================= */
+
+.sameer-loader {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    min-height: 100vh;
+
+    display: block;
+
+    background: #f6f2e8;
+    color: #080808;
+
+    overflow: hidden;
+
+    z-index: 2147483647;
+
+    isolation: isolate;
+}
+
+
+/* =========================================================
+   BACKGROUND
+   ========================================================= */
+
+.loader-bg {
+    position: absolute;
+    inset: 0;
+
+    z-index: -1;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(255, 100, 31, 0.10),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 15% 75%,
+            rgba(49, 87, 255, 0.08),
+            transparent 25%
+        ),
+        #f6f2e8;
+}
+
+
+/* Grain */
+.loader-bg::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    opacity: 0.13;
+
+    background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='.38'/%3E%3C/svg%3E");
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TOP
+   ========================================================= */
+
+.loader-top {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 28px 42px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 20;
+}
+
+
+/* Brand */
+
+.loader-brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.loader-mark {
+    width: 44px;
+    height: 44px;
+
+    border: 1.5px solid #080808;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 19px;
+    font-weight: 800;
+
+    letter-spacing: -0.05em;
+}
+
+.loader-mark span {
+    color: #ff641f;
+}
+
+
+.loader-brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.loader-brand-text strong {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.10em;
+}
+
+.loader-brand-text small {
+    font-size: 8px;
+    letter-spacing: 0.16em;
+    opacity: 0.55;
+}
+
+
+/* Meta */
+
+.loader-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+}
+
+.loader-meta i {
+    width: 5px;
+    height: 5px;
+
+    background: #ff641f;
+
+    border-radius: 50%;
+}
+
+.loader-meta strong {
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.loader-main {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 7vw 150px;
+}
+
+
+/* Huge HELLO */
+
+.loader-bg-text {
+    position: absolute;
+
+    left: 4vw;
+    top: 50%;
+
+    transform: translateY(-52%);
+
+    font-size: clamp(160px, 26vw, 430px);
+
+    font-weight: 900;
+
+    line-height: 0.8;
+
+    letter-spacing: -0.09em;
+
+    color: rgba(8, 8, 8, 0.035);
+
+    user-select: none;
+
+    white-space: nowrap;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   COPY
+   ========================================================= */
+
+.loader-copy {
+    position: relative;
+
+    width: 49%;
+
+    z-index: 10;
+}
+
+.loader-label {
+    display: inline-block;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.20em;
+
+    margin-bottom: 24px;
+
+    padding-left: 13px;
+
+    border-left: 3px solid #ff641f;
+}
+
+
+.loader-heading {
+    margin: 0;
+
+    font-size: clamp(58px, 7vw, 115px);
+
+    line-height: 0.87;
+
+    font-weight: 900;
+
+    letter-spacing: -0.075em;
+
+    text-transform: uppercase;
+}
+
+.loader-heading span {
+    display: block;
+}
+
+.loader-heading em {
+    color: #ff641f;
+    font-style: normal;
+}
+
+
+.loader-skills {
+    margin-top: 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.13em;
+}
+
+.loader-skills b {
+    font-size: 15px;
+    color: #3157ff;
+}
+
+
+/* =========================================================
+   VISUAL
+   ========================================================= */
+
+.loader-visual {
+    position: absolute;
+
+    left: 47%;
+    top: 50%;
+
+    width: min(39vw, 570px);
+    height: min(39vw, 570px);
+
+    transform: translate(-5%, -50%);
+
+    display: grid;
+    place-items: center;
+
+    z-index: 5;
+}
+
+
+/* Orange orb */
+
+.visual-orb {
+    position: absolute;
+
+    width: 44%;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #ffb293 0%,
+            #ff7a45 20%,
+            #ff641f 48%,
+            #d63f00 100%
+        );
+
+    box-shadow:
+        0 30px 70px rgba(255, 100, 31, 0.28),
+        inset -18px -22px 35px rgba(0, 0, 0, 0.14),
+        inset 12px 13px 25px rgba(255, 255, 255, 0.30);
+
+    animation: orbFloat 4s ease-in-out infinite;
+}
+
+
+/* Rings */
+
+.visual-ring {
+    position: absolute;
+
+    border: 1px solid rgba(8, 8, 8, 0.18);
+
+    border-radius: 50%;
+
+    transform: rotate(-18deg);
+}
+
+.visual-ring-one {
+    width: 64%;
+    height: 30%;
+
+    animation: ringRotateOne 7s linear infinite;
+}
+
+.visual-ring-two {
+    width: 78%;
+    height: 38%;
+
+    transform: rotate(40deg);
+
+    border-color: rgba(49, 87, 255, 0.24);
+
+    animation: ringRotateTwo 9s linear infinite reverse;
+}
+
+.visual-ring-three {
+    width: 91%;
+    height: 46%;
+
+    transform: rotate(-48deg);
+
+    border-style: dashed;
+
+    border-color: rgba(255, 100, 31, 0.28);
+
+    animation: ringRotateThree 12s linear infinite;
+}
+
+
+/* Dots */
+
+.visual-dot {
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #3157ff;
+
+    box-shadow: 0 0 20px rgba(49, 87, 255, 0.4);
+}
+
+.dot-one {
+    top: 13%;
+    right: 17%;
+
+    animation: dotFloat 2.4s ease-in-out infinite;
+}
+
+.dot-two {
+    bottom: 19%;
+    left: 16%;
+
+    background: #ff641f;
+
+    animation: dotFloat 3s ease-in-out infinite reverse;
+}
+
+.dot-three {
+    right: 7%;
+    bottom: 34%;
+
+    width: 5px;
+    height: 5px;
+
+    animation: dotFloat 2.8s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   PHOTO
+   ========================================================= */
+
+.loader-photo {
+    position: relative;
+
+    width: 44%;
+    height: 72%;
+
+    overflow: hidden;
+
+    border-radius: 150px 150px 24px 24px;
+
+    border: 1px solid rgba(8, 8, 8, 0.12);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.14);
+
+    background: #ddd5c8;
+
+    z-index: 8;
+
+    transform: rotate(4deg);
+
+    animation: photoFloat 4.5s ease-in-out infinite;
+}
+
+
+.loader-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    opacity: 1 !important;
+}
+
+
+.photo-glow {
+    position: absolute;
+    inset: auto 0 0;
+
+    height: 55%;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(8, 8, 8, 0.22),
+            transparent
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FLOATING CHIPS
+   ========================================================= */
+
+.visual-chip {
+    position: absolute;
+
+    padding: 10px 15px;
+
+    background: rgba(246, 242, 232, 0.88);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(8, 8, 8, 0.13);
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: 0.12em;
+
+    z-index: 12;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.chip-seo {
+    top: 18%;
+    left: 3%;
+
+    animation: chipMove 3.5s ease-in-out infinite;
+}
+
+.chip-ads {
+    right: 4%;
+    top: 27%;
+
+    background: #3157ff;
+    color: white;
+
+    animation: chipMove 4.2s ease-in-out infinite reverse;
+}
+
+.chip-social {
+    left: 7%;
+    bottom: 16%;
+
+    background: #ff641f;
+    color: #fff;
+
+    animation: chipMove 3.8s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.loader-process {
+    position: absolute;
+
+    right: 5vw;
+    bottom: 21%;
+
+    width: 250px;
+
+    z-index: 15;
+}
+
+
+.process-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid rgba(8, 8, 8, 0.16);
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+}
+
+
+.process-top strong {
+    font-size: 9px;
+    font-weight: 900;
+}
+
+
+/* Process item */
+
+.process-item {
+    height: 39px;
+
+    display: grid;
+    grid-template-columns: 34px 1fr 20px;
+
+    align-items: center;
+
+    border-bottom: 1px solid rgba(8, 8, 8, 0.08);
+
+    font-size: 9px;
+
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease,
+        color 0.35s ease;
+}
+
+
+.process-item > span {
+    opacity: 0.40;
+}
+
+.process-item > strong {
+    font-weight: 800;
+    letter-spacing: 0.11em;
+}
+
+.process-item > i {
+    font-style: normal;
+
+    text-align: right;
+
+    opacity: 0.35;
+}
+
+
+.process-item.active {
+    color: #ff641f;
+
+    transform: translateX(7px);
+}
+
+.process-item.active > span,
+.process-item.active > i {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   BOTTOM
+   ========================================================= */
+
+.loader-bottom {
+    position: absolute;
+
+    left: 42px;
+    right: 42px;
+    bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 20;
+}
+
+
+/* Status */
+
+.loader-status {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+}
+
+
+.loader-status i {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #ff641f;
+
+    animation: statusPulse 1s ease-in-out infinite;
+}
+
+
+/* Progress */
+
+.loader-progress {
+    width: min(430px, 45vw);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.progress-label {
+    font-size: 8px;
+    font-weight: 900;
+
+    letter-spacing: 0.12em;
+}
+
+
+.progress-track {
+    position: relative;
+
+    flex: 1;
+
+    height: 5px;
+
+    background: rgba(8, 8, 8, 0.10);
+
+    overflow: hidden;
+}
+
+
+.progress-track span {
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3157ff,
+            #ff641f
+        );
+
+    transform-origin: left center;
+
+    animation: loaderProgress 5s linear forwards;
+}
+
+
+.loader-progress strong {
+    min-width: 34px;
+
+    text-align: right;
+
+    font-size: 12px;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   REVEAL PANELS
+   ========================================================= */
+
+.reveal-panel {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    width: 50%;
+
+    background: #080808;
+
+    z-index: 100;
+
+    transform: translateX(0);
+
+    pointer-events: none;
+}
+
+.reveal-left {
+    left: 0;
+}
+
+.reveal-right {
+    right: 0;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes loaderProgress {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+@keyframes orbFloat {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-15px) scale(1.025);
+    }
+}
+
+
+@keyframes photoFloat {
+    0%,
+    100% {
+        transform: rotate(4deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(2deg) translateY(-10px);
+    }
+}
+
+
+@keyframes chipMove {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+}
+
+
+@keyframes dotFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+@keyframes ringRotateOne {
+    from {
+        transform: rotate(-18deg) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-18deg) rotate(360deg);
+    }
+}
+
+
+@keyframes ringRotateTwo {
+    from {
+        transform: rotate(40deg) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(40deg) rotate(-360deg);
+    }
+}
+
+
+@keyframes ringRotateThree {
+    from {
+        transform: rotate(-48deg) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-48deg) rotate(360deg);
+    }
+}
+
+
+@keyframes statusPulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0.55);
+        opacity: 0.4;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .loader-main {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .loader-heading {
+        font-size: clamp(52px, 8vw, 88px);
+    }
+
+    .loader-visual {
+        left: 45%;
+    }
+
+    .loader-process {
+        right: 4vw;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .loader-top {
+        padding: 20px 20px;
+    }
+
+    .loader-mark {
+        width: 38px;
+        height: 38px;
+    }
+
+    .loader-brand-text small {
+        font-size: 7px;
+    }
+
+    .loader-meta {
+        font-size: 8px;
+    }
+
+
+    .loader-main {
+        display: block;
+
+        padding: 100px 20px 120px;
+    }
+
+
+    .loader-bg-text {
+        left: -5px;
+        top: 44%;
+
+        font-size: 34vw;
+    }
+
+
+    .loader-copy {
+        width: 100%;
+
+        position: absolute;
+
+        left: 20px;
+        right: 20px;
+        top: 100px;
+    }
+
+
+    .loader-label {
+        margin-bottom: 15px;
+
+        font-size: 8px;
+    }
+
+
+    .loader-heading {
+        font-size: clamp(46px, 13vw, 78px);
+
+        line-height: 0.90;
+    }
+
+
+    .loader-skills {
+        margin-top: 18px;
+
+        gap: 7px;
+
+        font-size: 7px;
+    }
+
+
+    .loader-visual {
+        width: 82vw;
+        height: 82vw;
+
+        left: 50%;
+        top: 53%;
+
+        transform: translate(-50%, -50%);
+    }
+
+
+    .loader-photo {
+        width: 44%;
+        height: 68%;
+
+        border-radius: 100px 100px 18px 18px;
+    }
+
+
+    .visual-chip {
+        padding: 8px 11px;
+
+        font-size: 7px;
+    }
+
+
+    .loader-process {
+        left: 20px;
+        right: 20px;
+
+        width: auto;
+
+        bottom: 83px;
+    }
+
+
+    .process-top {
+        padding-bottom: 7px;
+    }
+
+
+    .process-item {
+        height: 26px;
+
+        grid-template-columns: 27px 1fr 15px;
+
+        font-size: 7px;
+    }
+
+
+    .loader-bottom {
+        left: 20px;
+        right: 20px;
+
+        bottom: 20px;
+
+        display: block;
+    }
+
+
+    .loader-status {
+        margin-bottom: 9px;
+
+        font-size: 7px;
+    }
+
+
+    .loader-progress {
+        width: 100%;
+
+        gap: 8px;
+    }
+
+
+    .progress-label {
+        font-size: 7px;
+    }
+
+
+    .loader-progress strong {
+        font-size: 10px;
+
+        min-width: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .loader-heading {
+        font-size: 43px;
+    }
+
+    .loader-copy {
+        top: 95px;
+    }
+
+    .loader-visual {
+        top: 52%;
+    }
+
+    .loader-process {
+        bottom: 80px;
+    }
+
+    .process-item {
+        height: 24px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   Loader MUST remain visible and functional.
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .visual-orb,
+    .loader-photo,
+    .visual-ring,
+    .visual-dot,
+    .visual-chip,
+    .loader-status i {
+        animation: none !important;
+    }
+
+    .progress-track span {
+        animation-duration: 5s !important;
+    }
+
+}
+
+
+
+
+/* Remove navbar drop shadow */
+:root {
+    --nav-shadow: none;
+}
+
+/* Remove the extra shadow/extrusion behind navbar */
+.nav-depth-1,
+.nav-depth-2 {
+    display: none !important;
+}
+
+/* Keep the glass navbar, but remove its shadow */
+.nav-face {
+    box-shadow: none !important;
+}
